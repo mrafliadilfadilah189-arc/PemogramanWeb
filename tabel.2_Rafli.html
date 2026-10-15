@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Laboratorium Komputer</title>
+    <style>
+        /* CSS Tipis-Tipis untuk Merapikan Tabel */
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Mengikuti font di gambar */
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: separate; /* Membuat efek garis ganda klasik */
+            border-spacing: 2px;
+            border: 1px solid #000000;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        th, td {
+            border: 1px solid #17de35;
+            padding: 6px 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        th {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .text-center {
+            text-align: center;
+            color: blue;
+        }
+
+        .text-bold {
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <!-- Judul Utama Tabel -->
+            <tr>
+                <th colspan="6" style="font-weight: normal; font-size: 1.2em; border: none; padding-bottom: 10px;">
+                    Jadwal Laboratorium Komputer
+                </th>
+            </tr>
+            <!-- Header Tingkat 1 -->
+            <tr>
+                <th rowspan="2">Hari</th>
+                <th colspan="2">Pagi</th>
+                <th colspan="2">Siang</th>
+                <th rowspan="2">Keterangan</th>
+            </tr>
+            <!-- Header Tingkat 2 (Jam) -->
+            <tr>
+                <th>08:00 - 10:00</th>
+                <th>10:00 - 12:00</th>
+                <th>13:00 - 15:00</th>
+                <th>15:00 - 17:00</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- BARIS SENIN -->
+            <tr>
+                <td rowspan="2">Senin</td>
+                <td>Web 1</td>
+                <td>Web 2</td>
+                <td colspan="2">Praktikum Basis Data</td>
+                <td rowspan="2">Normal</td>
+            </tr>
+            <tr>
+                <td colspan="2">Praktikum Pemrograman</td>
+                <td>Jaringan</td>
+                <td>Jaringan</td>
+            </tr>
+
+            <!-- BARIS SELASA -->
+            <tr>
+                <td>Selasa</td>
+                <td colspan="2">Seminar</td>
+                <td>Mobile</td>
+                <td>Mobile</td>
+                <td>Seminar Pagi</td>
+            </tr>
+
+            <!-- BARIS RABU -->
+            <tr>
+                <td rowspan="2">Rabu</td>
+                <td>Web</td>
+                <td>Web</td>
+                <td rowspan="2" colspan="2">Maintenance Laboratorium</td>
+                <td rowspan="2">Maintenance</td>
+            </tr>
+            <tr>
+                <td colspan="2">Basis Data</td>
+            </tr>
+
+            <!-- BARIS KAMIS -->
+            <tr>
+                <td>Kamis</td>
+                <td>Algoritma</td>
+                <td>Algoritma</td>
+                <td colspan="2">Praktikum Jaringan</td>
+                <td>Normal</td>
+            </tr>
+
+            <!-- BARIS CATATAN -->
+            <tr>
+                <td colspan="5" class="text-center text-bold">Catatan</td>
+                <td>Jadwal dapat berubah</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

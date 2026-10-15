@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        /* CSS Tipis-Tipis untuk Merapikan Tampilan */
+        body {
+            font-family: serif, sans-serif;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        /* Kotak pembungkus formulir utama seperti di gambar */
+        .form-container {
+            border: 1px solid #333333;
+            padding: 20px;
+            max-width: 500px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-weight: bold;
+        }
+
+        /* Mengatur jarak antar baris form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        /* Menebalkan teks label utama */
+        .form-group > label {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* Mengatur lebar input teks standar agar seragam */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100px; /* Ukuran default bawaan gambar, silakan ganti ke 100% jika ingin penuh */
+            max-width: 100%;
+            padding: 4px;
+            border: 1px solid #767676;
+            box-sizing: border-box;
+        }
+
+        /* Lebar khusus untuk input teks yang butuh space agak panjang */
+        input[type="text"],
+        input[type="email"],
+        input[type="url"] {
+            width: 250px;
+        }
+
+        textarea {
+            width: 350px;
+            height: 80px;
+            resize: vertical;
+        }
+
+        /* Reset style khusus untuk radio dan checkbox agar tidak terpengaruh lebar input */
+        input[type="radio"], 
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        /* Mengatur posisi teks di sebelah radio/checkbox */
+        .option-label {
+            font-weight: normal !important;
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+
+        /* Tombol aksi */
+        button {
+            padding: 4px 12px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border: 1px solid #767676;
+        }
+        
+        button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kotak pembungkus luar -->
+    <div class="form-container">
+        
+        <h2>Formulir Pendaftaran</h2>
+
+        <form action="" method="POST">
+            
+            <!-- Nama Lengkap -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="nama@email.com">
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <!-- Umur -->
+            <div class="form-group">
+                <label for="umur">Umur:</label><br>
+                <input type="number" id="umur" name="umur">
+            </div>
+
+            <!-- Tanggal Lahir -->
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+            </div>
+
+            <!-- Jenis Kelamin -->
+            <div class="form-group">
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+                <label for="laki" class="option-label">Laki-laki</label><br>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                <label for="perempuan" class="option-label">Perempuan</label>
+            </div>
+
+            <!-- Hobi -->
+            <div class="form-group">
+                <label>Hobi:</label><br>
+                <input type="checkbox" id="coding" name="hobi" value="Coding">
+                <label for="coding" class="option-label">Coding</label><br>
+                <input type="checkbox" id="gaming" name="hobi" value="Gaming">
+                <label for="gaming" class="option-label">Gaming</label><br>
+                <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                <label for="olahraga" class="option-label">Olahraga</label>
+            </div>
+
+            <!-- Jurusan -->
+            <div class="form-group">
+                <label for="jurusan">Jurusan:</label><br>
+                <select id="jurusan" name="jurusan">
+                    <option value="">Pilih Jurusan</option>
+                    <option value="">Sistem Informasi</option>
+                </select>
+            </div>
+
+            <!-- Alamat -->
+            <div class="form-group">
+                <label for="alamat">Alamat:</label><br>
+                <textarea id="alamat" name="alamat" placeholder="Masukkan alamat"></textarea>
+            </div>
+
+            <!-- Foto -->
+            <div class="form-group">
+                <label for="foto">Foto:</label><br>
+                <input type="file" id="foto" name="foto">
+            </div>
+
+            <!-- Website -->
+            <div class="form-group">
+                <label for="website">Website:</label><br>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </div>
+
+            <!-- Tombol Aksi -->
+            <div class="form-group" style="margin-top: 20px;">
+                <button type="submit">Kirim</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

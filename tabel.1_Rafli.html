@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Perkuliahan</title>
+    <style>
+        /* CSS Tipis-Tipis untuk Merapikan Tabel */
+        body {
+            font-family: 'Times New Roman', Times, serif; /* Mengikuti gaya font di gambar */
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: separate; /* Membuat efek garis ganda (double border) */
+            border-spacing: 2px;
+            border: 1px solid #f3b109;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        th, td {
+            border: 1px solid #09ccea;
+            padding: 6px 8px;
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        /* Mengatur teks tebal dan posisi tengah untuk komponen tertentu */
+        th, .text-bold {
+            font-weight: bold;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Judul Utama Tabel -->
+        <thead>
+            <tr>
+                <th colspan="5" class="text-center" style="font-size: 1.1em; font-weight: normal;">
+                    Jadwal Perkuliahan Semester 1
+                </th>
+            </tr>
+            <!-- Header Kolom -->
+            <tr>
+                <th rowspan="2" class="text-center">Hari</th>
+                <th rowspan="2" class="text-center">Jam</th>
+                <th colspan="2" class="text-center">Mata Kuliah</th>
+                <th rowspan="2" class="text-center">Ruangan</th>
+            </tr>
+            <tr>
+                <th class="text-center">Kode</th>
+                <th class="text-center">Nama Mata Kuliah</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <!-- Baris Hari Senin -->
+            <tr>
+                <td rowspan="2">Senin</td>
+                <td>08:00 - 10:00</td>
+                <td>IF101</td>
+                <td>Pemrograman Web</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF102</td>
+                <td>Basis Data</td>
+                <td>Lab 2</td>
+            </tr>
+
+            <!-- Baris Hari Selasa -->
+            <tr>
+                <td rowspan="3">Selasa</td>
+                <td>08:00 - 10:00</td>
+                <td>IF103</td>
+                <td>Algoritma</td>
+                <td>Ruang 201</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF104</td>
+                <td>Sistem Operasi</td>
+                <td>Ruang 202</td>
+            </tr>
+            <tr>
+                <td>13:00 - 15:00</td>
+                <td>IF105</td>
+                <td>Jaringan Komputer</td>
+                <td>Lab 3</td>
+            </tr>
+
+            <!-- Baris Hari Rabu -->
+            <tr>
+                <td rowspan="2">Rabu</td>
+                <td>08:00 - 10:00</td>
+                <td>IF106</td>
+                <td>Pemrograman Mobile</td>
+                <td>Lab 4</td>
+            </tr>
+            <tr>
+                <td>10:00 - 12:00</td>
+                <td>IF107</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>Ruang 203</td>
+            </tr>
+
+            <!-- Baris Kegiatan Akademik -->
+            <tr>
+                <td colspan="4">Kegiatan Akademik / Seminar</td>
+                <td>Aula</td>
+            </tr>
+
+            <!-- Baris Total -->
+            <tr>
+                <td class="text-bold">Total Mata Kuliah</td>
+                <td colspan="3" class="text-center text-bold">7 Mata Kuliah</td>
+                <td class="text-center">-</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
